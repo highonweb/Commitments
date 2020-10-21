@@ -1,4 +1,4 @@
-// const path = require("path");
+ const path = require("path");
 
 // module.exports = {
 //   // See <http://truffleframework.com/docs/advanced/configuration>
@@ -64,18 +64,17 @@ module.exports = {
     develop: {
       host: 'localhost',
       port: 7545,
-      gas: 6700000,
       network_id: '5777'
     },
 
 
     // Another network with more advanced options...
-    advanced: {
-      host: 'localhost',
-      port: 8545,           // Custom port
-      network_id: '*',
-      gas: 6700000,     // Enable EventEmitter interface for web3 (default: false)
-    },
+    // advanced: {
+    //   host: 'localhost',
+    //   port: 8545,           // Custom port
+    //   network_id: '*',
+    //   gas: 6700000,     // Enable EventEmitter interface for web3 (default: false)
+    // },
     
     //{
     // Useful for deploying to a public network.

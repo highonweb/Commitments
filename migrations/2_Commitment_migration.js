@@ -1,5 +1,5 @@
-const Commitment = artifacts.require("Commitmentdapp");
+const Commitments = artifacts.require("Commitments");
 
 module.exports = function (deployer) {
-  deployer.deploy(Commitment);
+  deployer.deploy(Commitments);
 };
