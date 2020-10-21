@@ -15,8 +15,8 @@ contract AddCommitment is Commitments {
         _;
     }
 
-    function postCommitment(string memory _Contract, uint256 _amount)
-        public
+    function postCommitment(string calldata _Contract, uint256 _amount)
+        external
         payable
         chkAmt(_amount, msg.value)
     {
