@@ -3,7 +3,7 @@
 // module.exports = {
 //   // See <http://truffleframework.com/docs/advanced/configuration>
 //   // to customize your Truffle configuration!
-//   contracts_build_directory: path.join(__dirname, "client/src/contracts"),
+  
 //   networks: {
 //     develop: {
 //       port: 8545
@@ -37,6 +37,7 @@
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
+  contracts_build_directory: path.join(__dirname, "client/src/contracts"),
   /**
    * Networks define how you connect to your ethereum client and let you set the
    * defaults web3 uses to send transactions. If you don't specify one truffle
@@ -62,24 +63,24 @@ module.exports = {
     
     develop: {
       host: 'localhost',
-      port: 8545,
+      port: 7545,
       gas: 6700000,
-      network_id: '*'
+      network_id: '5777'
     },
 
-    // Another network with more advanced options...
-    // advanced: {
-      // port: 8777,             // Custom port
-      // network_id: 1342,       // Custom network
-      // gas: 8500000,           // Gas sent with each transaction (default: ~6700000)
-      // gasPrice: 20000000000,  // 20 gwei (in wei) (default: 100 gwei)
-      // from: <address>,        // Account to send txs from (default: accounts[0])
-      // websockets: true        // Enable EventEmitter interface for web3 (default: false)
-    // },
 
+    // Another network with more advanced options...
+    advanced: {
+      host: 'localhost',
+      port: 8545,           // Custom port
+      network_id: '*',
+      gas: 6700000,     // Enable EventEmitter interface for web3 (default: false)
+    },
+    
+    //{
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
-    // ropsten: {
+    // ropsten: { */}
       // provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/YOUR-PROJECT-ID`),
       // network_id: 3,       // Ropsten's id
       // gas: 5500000,        // Ropsten has a lower block limit than mainnet
