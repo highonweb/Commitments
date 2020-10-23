@@ -18,12 +18,12 @@ contract EndCommitment is AssignContractee {
 
     function deleteCommitment(uint256 _id) internal {
         delete commitments[_id];
-        if(totalCommitments!=1){
+        if (totalCommitments != 1) {
             commitments[_id] = commitments[totalCommitments - 1];
             delete commitments[totalCommitments - 1];
-        }        
+        }
         emit EmergencyEvent();
-
+        totalCommitments--;
     }
 
     function EndCommitmentContractor(uint256 _id) external {
