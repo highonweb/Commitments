@@ -1,10 +1,8 @@
 pragma solidity >=0.4.21 <0.7.0;
 
-import "./Commitments.sol";
-import "./AddCommitment.sol";
-import "./DeleteCommitment.sol";
+import "./AssignContractee.sol";
 
-contract EndCommitment is Commitments, AddCommitment, DeleteCommitment {
+contract EndCommitment is AssignContractee {
     event EndCommitmentContracteeEvent(
         address _contractor,
         address _contractee,
@@ -16,6 +14,17 @@ contract EndCommitment is Commitments, AddCommitment, DeleteCommitment {
         address _contractee,
         uint256 _amount
     );
+    event EmergencyEvent();
+
+    function deleteCommitment(uint256 _id) internal {
+        delete commitments[_id];
+        if(totalCommitments!=1){
+            commitments[_id] = commitments[totalCommitments - 1];
+            delete commitments[totalCommitments - 1];
+        }        
+        emit EmergencyEvent();
+
+    }
 
     function EndCommitmentContractor(uint256 _id) external {
         //commitment closed by contractor

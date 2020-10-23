@@ -1,16 +1,8 @@
 pragma solidity >=0.4.21 <0.7.0;
 
-import "./Commitments.sol";
+import "./EndCommitment.sol";
 
-contract DeleteCommitment is Commitments {
-    event EmergencyEvent();
-
-    function deleteCommitment(uint256 _id) internal {
-        delete commitments[_id];
-        commitments[_id] = commitments[totalCommitments - 1];
-        delete commitments[totalCommitments - 1];
-        emit EmergencyEvent();
-    }
+contract DeleteCommitment is EndCommitment {
 
     function deleteByContractor(uint256 _id) public {
         require(

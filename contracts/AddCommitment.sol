@@ -10,28 +10,22 @@ contract AddCommitment is Commitments {
         bool status
     );
 
-    modifier chkAmt(uint256 amount, uint256 value) {
-        require(amount == value);
-        _;
-    }
-
-    function postCommitment(string calldata _Contract, uint256 _amount)
+    function postCommitment(string calldata _Contract)
         external
         payable
-        chkAmt(_amount, msg.value)
     {
         commitments.push(
             Commitment({
                 contractor: msg.sender,
                 contractee: address(0),
                 Contract: _Contract,
-                amount: _amount,
+                amount: msg.value,
                 status: false,
                 contracteeStatus: false,
                 contractorStatus: false
             })
         );
-        emit NewCommitment(msg.sender, _Contract, _amount, false);
+        emit NewCommitment(msg.sender, _Contract, msg.value, false);
         totalCommitments++;
     }
 

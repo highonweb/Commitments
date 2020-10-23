@@ -1,8 +1,8 @@
 pragma solidity >=0.4.21 <0.7.0;
 
-import "./Commitments.sol";
+import "./AddCommitment.sol";
 
-contract AssignContractee is Commitments {
+contract AssignContractee is AddCommitment {
     event AssignedContractee(address contractee, uint256 _id);
 
     // check here!!!!!!!!!!!!!  uint256!!!
@@ -23,5 +23,6 @@ contract AssignContractee is Commitments {
                 counter++;
             }
         }
+        return assignedCommitments;
     }
 }
