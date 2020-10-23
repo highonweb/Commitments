@@ -7,9 +7,15 @@ contract Commitments {
         string Contract;
         uint256 amount;
         bool status;
+        bool contracteeStatus;
+        bool contractorStatus;
     }
 
     Commitment[] public commitments;
 
-    uint256 public totalCommitments = 0;
+    uint256 public totalCommitments;
+
+    constructor() public {
+        totalCommitments = 0;
+    }
 }

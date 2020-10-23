@@ -5,9 +5,12 @@ import "./Commitments.sol";
 contract AssignContractee is Commitments {
     event AssignedContractee(address contractee, uint256 _id);
 
+    // check here!!!!!!!!!!!!!  uint256!!!
     function assigncontractee(uint256 _id) external {
-        commitments[_id].contractee = msg.sender;
-        commitments[_id].status = true;
+        Commitment storage mycommitment = commitments[_id];
+        require(mycommitment.contractor != msg.sender);
+        mycommitment.contractee = msg.sender;
+        mycommitment.status = true;
         emit AssignedContractee(msg.sender, _id);
     }
 

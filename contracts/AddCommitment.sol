@@ -26,10 +26,21 @@ contract AddCommitment is Commitments {
                 contractee: address(0),
                 Contract: _Contract,
                 amount: _amount,
-                status: false
+                status: false,
+                contracteeStatus: false,
+                contractorStatus: false
             })
         );
         emit NewCommitment(msg.sender, _Contract, _amount, false);
         totalCommitments++;
+    }
+
+    function transferAmount(uint256 _amount, address _contractee)
+        internal
+        returns (bool)
+    {
+        address payable contracte = address(uint160(_contractee));
+        contracte.transfer(_amount);
+        return true;
     }
 }
