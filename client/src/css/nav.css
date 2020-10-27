@@ -2,7 +2,8 @@
 .topnav {
   background-color: #333;
   overflow: hidden;
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  
 }
 
 /* Style the links inside the navigation bar */
@@ -12,7 +13,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 
 .right {

@@ -8,20 +8,22 @@ function Web3ContextProvider(props) {
   const [web3, setweb3] = useState({});
   const [accts, setaccts] = useState({});
   const [ins, setins] = useState({});
+
+  async function w3() {
+    const web3 = await getWeb3();
+    const accounts = await web3.eth.getAccounts();
+    const networkId = await web3.eth.net.getId();
+    const deployedNetwork = DeleteCommitment.networks[networkId];
+    const instance = new web3.eth.Contract(
+      DeleteCommitment.abi,
+      deployedNetwork && deployedNetwork.address
+    );
+    setins(instance);
+    setweb3(web3);
+    setaccts(accounts);
+  }
+
   useEffect(() => {
-    async function w3() {
-      const web3 = await getWeb3();
-      const accounts = await web3.eth.getAccounts();
-      const networkId = await web3.eth.net.getId();
-      const deployedNetwork = DeleteCommitment.networks[networkId];
-      const instance = new web3.eth.Contract(
-        DeleteCommitment.abi,
-        deployedNetwork && deployedNetwork.address
-      );
-      setins(instance);
-      setweb3(web3);
-      setaccts(accounts);
-    }
     w3();
   }, []);
 
