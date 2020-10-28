@@ -40,7 +40,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/Dashboard">
-          <Dashboard />
+          <Dashboard ins= {ins} accts = {accts} web3={web3} />
         </Route>
         <Route path="/Explore">
           <Explore ins= {ins} accts = {accts} web3={web3} />

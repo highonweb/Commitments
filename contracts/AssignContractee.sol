@@ -8,7 +8,7 @@ contract AssignContractee is AddCommitment {
     // check here!!!!!!!!!!!!!  uint256!!!
     function assigncontractee(uint256 _id) external {
         Commitment storage mycommitment = commitments[_id];
-        require(mycommitment.contractor != msg.sender);
+        require(mycommitment.contractor != msg.sender && mycommitment.status == false);
         mycommitment.contractee = msg.sender;
         mycommitment.status = true;
         emit AssignedContractee(msg.sender, _id);
