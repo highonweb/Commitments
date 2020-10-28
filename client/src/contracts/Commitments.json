@@ -1,0 +1,892 @@
+{
+  "contractName": "Commitments",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "commitments",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "contractor",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "contractee",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "Contract",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "status",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "contracteeStatus",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "contractorStatus",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalCommitments",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.4+commit.1dca32f3\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"commitments\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"contractor\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"contractee\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"Contract\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"status\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"contracteeStatus\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"contractorStatus\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalCommitments\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/sivaraman/Projects/Commitments/contracts/Commitments.sol\":\"Commitments\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/sivaraman/Projects/Commitments/contracts/Commitments.sol\":{\"keccak256\":\"0xda2a09397da2f56bafcf2c4d8bb7b4ebe378d1ad828cbee1b341024e59a89f2d\",\"urls\":[\"bzz-raw://f54a707e8b6f7dcb5ec3d922935f04c58beae4eab1c7dc9a2230f2b311275656\",\"dweb:/ipfs/QmapkR8g5Ab7wowWXcisppXTyhVoAQm4y36EuF6ehmv9NL\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506000600181905550610318806100286000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806349ce89971461003b57806378bb86d314610170575b600080fd5b6100676004803603602081101561005157600080fd5b810190808035906020019092919050505061018e565b604051808873ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001868152602001851515151581526020018415151515815260200183151515158152602001828103825287818151815260200191508051906020019080838360005b8381101561012f578082015181840152602081019050610114565b50505050905090810190601f16801561015c5780820380516001836020036101000a031916815260200191505b509850505050505050505060405180910390f35b6101786102dc565b6040518082815260200191505060405180910390f35b6000818154811061019b57fe5b90600052602060002090600502016000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102935780601f1061026857610100808354040283529160200191610293565b820191906000526020600020905b81548152906001019060200180831161027657829003601f168201915b5050505050908060030154908060040160009054906101000a900460ff16908060040160019054906101000a900460ff16908060040160029054906101000a900460ff16905087565b6001548156fea26469706673582212203453dd6361231d8dafb66c2d34cb4a64d733c794ac30c5e4589d845198b2002264736f6c63430006040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806349ce89971461003b57806378bb86d314610170575b600080fd5b6100676004803603602081101561005157600080fd5b810190808035906020019092919050505061018e565b604051808873ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001868152602001851515151581526020018415151515815260200183151515158152602001828103825287818151815260200191508051906020019080838360005b8381101561012f578082015181840152602081019050610114565b50505050905090810190601f16801561015c5780820380516001836020036101000a031916815260200191505b509850505050505050505060405180910390f35b6101786102dc565b6040518082815260200191505060405180910390f35b6000818154811061019b57fe5b90600052602060002090600502016000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102935780601f1061026857610100808354040283529160200191610293565b820191906000526020600020905b81548152906001019060200180831161027657829003601f168201915b5050505050908060030154908060040160009054906101000a900460ff16908060040160019054906101000a900460ff16908060040160029054906101000a900460ff16905087565b6001548156fea26469706673582212203453dd6361231d8dafb66c2d34cb4a64d733c794ac30c5e4589d845198b2002264736f6c63430006040033",
+  "sourceMap": "34:382:2:-:0;;;356:58;5:9:-1;2:2;;;27:1;24;17:12;2:2;356:58:2;406:1;387:16;:20;;;;34:382;;;;;;",
+  "deployedSourceMap": "34:382:2:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;34:382:2;;;;;;;;;;;;;;;;;;;;;12:1:-1;9;2:12;280:31:2;;;;;;15:2:-1;10:3;7:11;4:2;;;31:1;28;21:12;4:2;280:31:2;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;280:31:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;318;;;:::i;:::-;;;;;;;;;;;;;;;;;;;280;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;318:::-;;;;:::o",
+  "source": "pragma solidity >=0.4.21 <0.7.0;\n\ncontract Commitments {\n    struct Commitment {\n        address contractor;\n        address contractee;\n        string Contract;\n        uint256 amount;\n        bool status;\n        bool contracteeStatus;\n        bool contractorStatus;\n    }\n\n    Commitment[] public commitments;\n\n    uint256 public totalCommitments;\n\n    constructor() public {\n        totalCommitments = 0;\n    }\n}\n",
+  "sourcePath": "/home/sivaraman/Projects/Commitments/contracts/Commitments.sol",
+  "ast": {
+    "absolutePath": "/home/sivaraman/Projects/Commitments/contracts/Commitments.sol",
+    "exportedSymbols": {
+      "Commitments": [
+        210
+      ]
+    },
+    "id": 211,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 181,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 210,
+        "linearizedBaseContracts": [
+          210
+        ],
+        "name": "Commitments",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Commitments.Commitment",
+            "id": 196,
+            "members": [
+              {
+                "constant": false,
+                "id": 183,
+                "name": "contractor",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "89:18:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 182,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "89:7:2",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 185,
+                "name": "contractee",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "117:18:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 184,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "117:7:2",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 187,
+                "name": "Contract",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "145:15:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 186,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "145:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 189,
+                "name": "amount",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "170:14:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 188,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "170:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 191,
+                "name": "status",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "194:11:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 190,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "194:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 193,
+                "name": "contracteeStatus",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "215:21:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 192,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "215:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 195,
+                "name": "contractorStatus",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "246:21:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 194,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "246:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Commitment",
+            "nodeType": "StructDefinition",
+            "scope": 210,
+            "src": "61:213:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "49ce8997",
+            "id": 199,
+            "name": "commitments",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 210,
+            "src": "280:31:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Commitment_$196_storage_$dyn_storage",
+              "typeString": "struct Commitments.Commitment[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 197,
+                "name": "Commitment",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 196,
+                "src": "280:10:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Commitment_$196_storage_ptr",
+                  "typeString": "struct Commitments.Commitment"
+                }
+              },
+              "id": 198,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "280:12:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Commitment_$196_storage_$dyn_storage_ptr",
+                "typeString": "struct Commitments.Commitment[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "78bb86d3",
+            "id": 201,
+            "name": "totalCommitments",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 210,
+            "src": "318:31:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 200,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "318:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 208,
+              "nodeType": "Block",
+              "src": "377:37:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 206,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 204,
+                      "name": "totalCommitments",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 201,
+                      "src": "387:16:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 205,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "406:1:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "387:20:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 207,
+                  "nodeType": "ExpressionStatement",
+                  "src": "387:20:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 209,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 202,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "367:2:2"
+            },
+            "returnParameters": {
+              "id": 203,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "377:0:2"
+            },
+            "scope": 210,
+            "src": "356:58:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 211,
+        "src": "34:382:2"
+      }
+    ],
+    "src": "0:417:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/sivaraman/Projects/Commitments/contracts/Commitments.sol",
+    "exportedSymbols": {
+      "Commitments": [
+        210
+      ]
+    },
+    "id": 211,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 181,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 210,
+        "linearizedBaseContracts": [
+          210
+        ],
+        "name": "Commitments",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Commitments.Commitment",
+            "id": 196,
+            "members": [
+              {
+                "constant": false,
+                "id": 183,
+                "name": "contractor",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "89:18:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 182,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "89:7:2",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 185,
+                "name": "contractee",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "117:18:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 184,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "117:7:2",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 187,
+                "name": "Contract",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "145:15:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 186,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "145:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 189,
+                "name": "amount",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "170:14:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 188,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "170:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 191,
+                "name": "status",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "194:11:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 190,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "194:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 193,
+                "name": "contracteeStatus",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "215:21:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 192,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "215:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 195,
+                "name": "contractorStatus",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 196,
+                "src": "246:21:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 194,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "246:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Commitment",
+            "nodeType": "StructDefinition",
+            "scope": 210,
+            "src": "61:213:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "49ce8997",
+            "id": 199,
+            "name": "commitments",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 210,
+            "src": "280:31:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Commitment_$196_storage_$dyn_storage",
+              "typeString": "struct Commitments.Commitment[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 197,
+                "name": "Commitment",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 196,
+                "src": "280:10:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Commitment_$196_storage_ptr",
+                  "typeString": "struct Commitments.Commitment"
+                }
+              },
+              "id": 198,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "280:12:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Commitment_$196_storage_$dyn_storage_ptr",
+                "typeString": "struct Commitments.Commitment[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "78bb86d3",
+            "id": 201,
+            "name": "totalCommitments",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 210,
+            "src": "318:31:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 200,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "318:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 208,
+              "nodeType": "Block",
+              "src": "377:37:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 206,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 204,
+                      "name": "totalCommitments",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 201,
+                      "src": "387:16:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 205,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "406:1:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "387:20:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 207,
+                  "nodeType": "ExpressionStatement",
+                  "src": "387:20:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 209,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 202,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "367:2:2"
+            },
+            "returnParameters": {
+              "id": 203,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "377:0:2"
+            },
+            "scope": 210,
+            "src": "356:58:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 211,
+        "src": "34:382:2"
+      }
+    ],
+    "src": "0:417:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.4+commit.1dca32f3.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.1",
+  "updatedAt": "2020-10-27T14:15:24.468Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
