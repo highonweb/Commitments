@@ -43,7 +43,7 @@ function App() {
           <Dashboard />
         </Route>
         <Route path="/Explore">
-          <Explore ins= {ins} accts = {accts} />
+          <Explore ins= {ins} accts = {accts} web3={web3} />
         </Route>
         <Route path="/PendingContracts">
           <PendingContract />

@@ -6,7 +6,7 @@ function Home() {
  
   return (
     <>
-    <img className="image" src={home}/>
+    <img className="image" src={home} alt="home"/>
     <h1 className="heading">Welcome to Commitments</h1>
     </>
   );

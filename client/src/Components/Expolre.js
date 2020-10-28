@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react';
 import Commitment from './Commitment';
 import '../css/explore.css';
 
-function Explore({ins,accts}) {
+function Explore({ins,accts,web3}) {
   const[commitments,setCommitments] = useState([]);
 
   const allCommitments = async() => {
@@ -23,13 +23,13 @@ function Explore({ins,accts}) {
 
   useEffect(()=>{
     allCommitments();
-  },[ins,accts]);
+  },[ins,accts,web3]);
 
 return (
   <>
-    {commitments == []?<h1 className = "heading">Oops no commitments!</h1>: <h1 className = "heading">Commitments</h1>}
+    {commitments === []?<h1 className = "heading">Oops no commitments!</h1>: <h1 className = "heading">Commitments</h1>}
     {commitments.map((commitment,i) => (
-      <Commitment key = {i} contract = {commitment.Contract} contractor = {commitment.contractor} contractee = {commitment.contractee} amount = {commitment.amount}/>
+      <Commitment key = {i} assignedContracteeEvent = {ins.events.AssignedContractee} accts = {accts[0]} assignContractee = {ins.methods.assigncontractee} id={i} web3={web3} contract = {commitment.Contract} contractor = {commitment.contractor} contractee = {commitment.contractee} amount = {commitment.amount}/>
     ))}
   </>
 );
