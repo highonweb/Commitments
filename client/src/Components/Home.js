@@ -1,9 +1,15 @@
 import React from 'react';
+import home from '../img/home.png';
+import "../css/home.css";
  
 function Home() {
-  const greeting = 'We are home!';
  
-  return <h1>{greeting}</h1>;
+  return (
+    <>
+    <img className="image" src={home}/>
+    <h1 className="heading">Welcome to Commitments</h1>
+    </>
+  );
 }
  
 export default Home;
