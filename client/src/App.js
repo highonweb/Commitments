@@ -1,38 +1,15 @@
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Explore from './Components/Expolre';
 import Dashboard from './Components/Dashboard';
 import Home from './Components/Home';
 import PendingContract from './Components/PendingContracts';
-import DeleteCommitment from './contracts/DeleteCommitment.json';
-import getWeb3 from './getWeb3';
+import Web3ContextProvider from './contexts/Web3Context';
 
 function App() {
-  const [web3, setweb3] = useState({});
-  const [accts, setaccts] = useState({});
-  const [ins, setins] = useState({});
- 
-  async function web3Instance() {
-    const web3 = await getWeb3();
-    const accounts = await web3.eth.getAccounts();
-    const networkId = await web3.eth.net.getId();
-    const deployedNetwork = DeleteCommitment.networks[networkId];
-    const instance = new web3.eth.Contract(
-      DeleteCommitment.abi,
-      deployedNetwork && deployedNetwork.address
-    );
-    setins(instance);
-    setweb3(web3);
-    setaccts(accounts);
-  }
-
-  useEffect(()=>{  
-    web3Instance();
-  },[web3,accts,ins])
-
   return (
-    
+    <Web3ContextProvider>
     <Router>
       <Navbar />
       <Switch>
@@ -40,16 +17,17 @@ function App() {
           <Home />
         </Route>
         <Route path="/Dashboard">
-          <Dashboard ins= {ins} accts = {accts} web3={web3} />
+          <Dashboard/>
         </Route>
         <Route path="/Explore">
-          <Explore ins= {ins} accts = {accts} web3={web3} />
+          <Explore/>
         </Route>
         <Route path="/PendingContracts">
           <PendingContract />
         </Route>
       </Switch>
     </Router>
+    </Web3ContextProvider>
 
     );
 }

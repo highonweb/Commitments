@@ -1,6 +1,6 @@
-import React, {createContext, useState, useEffect} from 'react';
-import DeleteCommitment from '../contracts/DeleteCommitment.json';
-import getWeb3 from '../getWeb3';
+import React, { createContext, useState, useEffect } from "react";
+import RequestOrgan from "../contracts/RequestOrgan.json";
+import getWeb3 from "../getWeb3";
 
 export const Web3Context = createContext();
 
@@ -9,26 +9,26 @@ function Web3ContextProvider(props) {
   const [accts, setaccts] = useState({});
   const [ins, setins] = useState({});
 
-  async function w3() {
-    const web3 = await getWeb3();
-    const accounts = await web3.eth.getAccounts();
-    const networkId = await web3.eth.net.getId();
-    const deployedNetwork = DeleteCommitment.networks[networkId];
-    const instance = new web3.eth.Contract(
-      DeleteCommitment.abi,
+  async function web3Fetch() {
+    const web3Instance = await getWeb3();
+    const accounts = await web3Instance.eth.getAccounts();
+    const networkId = await web3Instance.eth.net.getId();
+    const deployedNetwork = RequestOrgan.networks[networkId];
+    const instance = new web3Instance.eth.Contract(
+      RequestOrgan.abi,
       deployedNetwork && deployedNetwork.address
     );
     setins(instance);
-    setweb3(web3);
+    setweb3(web3Instance);
     setaccts(accounts);
   }
 
   useEffect(() => {
-    w3();
+    web3Fetch();
   }, []);
 
   return (
-    <Web3Context.Provider value={{web3, accts, ins}}>
+    <Web3Context.Provider value={{ web3, accts, ins }}>
       {props.children}
     </Web3Context.Provider>
   );

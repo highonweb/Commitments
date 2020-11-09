@@ -1,7 +1,9 @@
-import React,{useState} from 'react';
+import React,{useState,useContext} from 'react';
+import { Web3Context } from '../contexts/Web3Context';
 import '../css/form.css';
 
-function AddCommitments({ins,accts,web3}) {
+function AddCommitments() {
+    const{ web3, accts, ins} = useContext(Web3Context);
     const[contract,setContract] = useState("");
     const[amount,setAmount] = useState("0");
     const[posted,setPosted] = useState("");

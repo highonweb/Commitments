@@ -1,8 +1,10 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState,useEffect,useContext} from 'react';
 import Commitment from './Commitment';
 import '../css/explore.css';
+import { Web3Context } from '../contexts/Web3Context';
 
-function Explore({ins,accts,web3}) {
+function Explore() {
+  const{ web3, accts, ins} = useContext(Web3Context);
   const[commitments,setCommitments] = useState([]);
 
   const allCommitments = async() => {
