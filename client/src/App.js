@@ -1,35 +1,34 @@
-import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Navbar from './Components/Navbar';
-import Explore from './Components/Expolre';
-import Dashboard from './Components/Dashboard';
-import Home from './Components/Home';
-import PendingContract from './Components/PendingContracts';
-import Web3ContextProvider from './contexts/Web3Context';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import Explore from "./Components/Expolre";
+import Dashboard from "./Components/Dashboard";
+import Home from "./Components/Home";
+import PendingContract from "./Components/PendingContracts";
+import Web3ContextProvider from "./contexts/Web3Context";
 
 function App() {
   return (
     <Web3ContextProvider>
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/Dashboard">
-          <Dashboard/>
-        </Route>
-        <Route path="/Explore">
-          <Explore/>
-        </Route>
-        <Route path="/PendingContracts">
-          <PendingContract />
-        </Route>
-      </Switch>
-    </Router>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/Dashboard">
+            <Dashboard />
+          </Route>
+          <Route path="/Explore">
+            <Explore />
+          </Route>
+          <Route path="/PendingContracts">
+            <PendingContract />
+          </Route>
+        </Switch>
+      </Router>
     </Web3ContextProvider>
-
-    );
+  );
 }
 
 export default App;

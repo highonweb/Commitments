@@ -262,24 +262,14 @@
   "ast": {
     "absolutePath": "/home/sivaraman/Projects/Commitments/contracts/DeleteCommitment.sol",
     "exportedSymbols": {
-      "DeleteCommitment": [
-        241
-      ]
+      "DeleteCommitment": [241]
     },
     "id": 242,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 212,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".21", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:3"
       },
@@ -316,23 +306,12 @@
             "src": "94:13:3"
           }
         ],
-        "contractDependencies": [
-          80,
-          179,
-          210,
-          416
-        ],
+        "contractDependencies": [80, 179, 210, 416],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
         "id": 241,
-        "linearizedBaseContracts": [
-          241,
-          416,
-          179,
-          80,
-          210
-        ],
+        "linearizedBaseContracts": [241, 416, 179, 80, 210],
         "name": "DeleteCommitment",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -536,10 +515,7 @@
                       "id": 220,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "173:7:3",
                       "typeDescriptions": {
@@ -688,24 +664,14 @@
   "legacyAST": {
     "absolutePath": "/home/sivaraman/Projects/Commitments/contracts/DeleteCommitment.sol",
     "exportedSymbols": {
-      "DeleteCommitment": [
-        241
-      ]
+      "DeleteCommitment": [241]
     },
     "id": 242,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 212,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".21", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:3"
       },
@@ -742,23 +708,12 @@
             "src": "94:13:3"
           }
         ],
-        "contractDependencies": [
-          80,
-          179,
-          210,
-          416
-        ],
+        "contractDependencies": [80, 179, 210, 416],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
         "id": 241,
-        "linearizedBaseContracts": [
-          241,
-          416,
-          179,
-          80,
-          210
-        ],
+        "linearizedBaseContracts": [241, 416, 179, 80, 210],
         "name": "DeleteCommitment",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -962,10 +917,7 @@
                       "id": 220,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "173:7:3",
                       "typeDescriptions": {

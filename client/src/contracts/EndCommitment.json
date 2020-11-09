@@ -245,24 +245,14 @@
   "ast": {
     "absolutePath": "/home/sivaraman/Projects/Commitments/contracts/EndCommitment.sol",
     "exportedSymbols": {
-      "EndCommitment": [
-        416
-      ]
+      "EndCommitment": [416]
     },
     "id": 417,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 243,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".21", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:4"
       },
@@ -299,21 +289,12 @@
             "src": "94:16:4"
           }
         ],
-        "contractDependencies": [
-          80,
-          179,
-          210
-        ],
+        "contractDependencies": [80, 179, 210],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
         "id": 416,
-        "linearizedBaseContracts": [
-          416,
-          179,
-          80,
-          210
-        ],
+        "linearizedBaseContracts": [416, 179, 80, 210],
         "name": "EndCommitment",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -1299,10 +1280,7 @@
                       "id": 308,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "823:7:4",
                       "typeDescriptions": {
@@ -1424,9 +1402,7 @@
                   "src": "1001:40:4"
                 },
                 {
-                  "assignments": [
-                    336
-                  ],
+                  "assignments": [336],
                   "declarations": [
                     {
                       "constant": false,
@@ -1641,10 +1617,7 @@
                       "id": 348,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "1229:7:4",
                       "typeDescriptions": {
@@ -2201,10 +2174,7 @@
                       "id": 377,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "1569:7:4",
                       "typeDescriptions": {
@@ -2610,24 +2580,14 @@
   "legacyAST": {
     "absolutePath": "/home/sivaraman/Projects/Commitments/contracts/EndCommitment.sol",
     "exportedSymbols": {
-      "EndCommitment": [
-        416
-      ]
+      "EndCommitment": [416]
     },
     "id": 417,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 243,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".21", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:4"
       },
@@ -2664,21 +2624,12 @@
             "src": "94:16:4"
           }
         ],
-        "contractDependencies": [
-          80,
-          179,
-          210
-        ],
+        "contractDependencies": [80, 179, 210],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
         "id": 416,
-        "linearizedBaseContracts": [
-          416,
-          179,
-          80,
-          210
-        ],
+        "linearizedBaseContracts": [416, 179, 80, 210],
         "name": "EndCommitment",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -3664,10 +3615,7 @@
                       "id": 308,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "823:7:4",
                       "typeDescriptions": {
@@ -3789,9 +3737,7 @@
                   "src": "1001:40:4"
                 },
                 {
-                  "assignments": [
-                    336
-                  ],
+                  "assignments": [336],
                   "declarations": [
                     {
                       "constant": false,
@@ -4006,10 +3952,7 @@
                       "id": 348,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "1229:7:4",
                       "typeDescriptions": {
@@ -4566,10 +4509,7 @@
                       "id": 377,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        -18,
-                        -18
-                      ],
+                      "overloadedDeclarations": [-18, -18],
                       "referencedDeclaration": -18,
                       "src": "1569:7:4",
                       "typeDescriptions": {

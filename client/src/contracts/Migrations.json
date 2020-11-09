@@ -58,24 +58,14 @@
   "ast": {
     "absolutePath": "/home/sivaraman/Projects/Commitments/contracts/Migrations.sol",
     "exportedSymbols": {
-      "Migrations": [
-        453
-      ]
+      "Migrations": [453]
     },
     "id": 454,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 418,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".21", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "32:33:5"
       },
@@ -87,9 +77,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 453,
-        "linearizedBaseContracts": [
-          453
-        ],
+        "linearizedBaseContracts": [453],
         "name": "Migrations",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -480,24 +468,14 @@
   "legacyAST": {
     "absolutePath": "/home/sivaraman/Projects/Commitments/contracts/Migrations.sol",
     "exportedSymbols": {
-      "Migrations": [
-        453
-      ]
+      "Migrations": [453]
     },
     "id": 454,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 418,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".21", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "32:33:5"
       },
@@ -509,9 +487,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 453,
-        "linearizedBaseContracts": [
-          453
-        ],
+        "linearizedBaseContracts": [453],
         "name": "Migrations",
         "nodeType": "ContractDefinition",
         "nodes": [

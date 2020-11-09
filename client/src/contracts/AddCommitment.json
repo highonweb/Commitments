@@ -118,24 +118,14 @@
   "ast": {
     "absolutePath": "/home/sivaraman/Projects/Commitments/contracts/AddCommitment.sol",
     "exportedSymbols": {
-      "AddCommitment": [
-        80
-      ]
+      "AddCommitment": [80]
     },
     "id": 81,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".21", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:0"
       },
@@ -172,17 +162,12 @@
             "src": "89:11:0"
           }
         ],
-        "contractDependencies": [
-          210
-        ],
+        "contractDependencies": [210],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
         "id": 80,
-        "linearizedBaseContracts": [
-          80,
-          210
-        ],
+        "linearizedBaseContracts": [80, 210],
         "name": "AddCommitment",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -879,9 +864,7 @@
               "src": "883:132:0",
               "statements": [
                 {
-                  "assignments": [
-                    61
-                  ],
+                  "assignments": [61],
                   "declarations": [
                     {
                       "constant": false,
@@ -1242,24 +1225,14 @@
   "legacyAST": {
     "absolutePath": "/home/sivaraman/Projects/Commitments/contracts/AddCommitment.sol",
     "exportedSymbols": {
-      "AddCommitment": [
-        80
-      ]
+      "AddCommitment": [80]
     },
     "id": 81,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".21", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:0"
       },
@@ -1296,17 +1269,12 @@
             "src": "89:11:0"
           }
         ],
-        "contractDependencies": [
-          210
-        ],
+        "contractDependencies": [210],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
         "id": 80,
-        "linearizedBaseContracts": [
-          80,
-          210
-        ],
+        "linearizedBaseContracts": [80, 210],
         "name": "AddCommitment",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -2003,9 +1971,7 @@
               "src": "883:132:0",
               "statements": [
                 {
-                  "assignments": [
-                    61
-                  ],
+                  "assignments": [61],
                   "declarations": [
                     {
                       "constant": false,

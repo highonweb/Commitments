@@ -79,24 +79,14 @@
   "ast": {
     "absolutePath": "/home/sivaraman/Projects/Commitments/contracts/Commitments.sol",
     "exportedSymbols": {
-      "Commitments": [
-        210
-      ]
+      "Commitments": [210]
     },
     "id": 211,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 181,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".21", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:2"
       },
@@ -108,9 +98,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 210,
-        "linearizedBaseContracts": [
-          210
-        ],
+        "linearizedBaseContracts": [210],
         "name": "Commitments",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -479,24 +467,14 @@
   "legacyAST": {
     "absolutePath": "/home/sivaraman/Projects/Commitments/contracts/Commitments.sol",
     "exportedSymbols": {
-      "Commitments": [
-        210
-      ]
+      "Commitments": [210]
     },
     "id": 211,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 181,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".21", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:2"
       },
@@ -508,9 +486,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 210,
-        "linearizedBaseContracts": [
-          210
-        ],
+        "linearizedBaseContracts": [210],
         "name": "Commitments",
         "nodeType": "ContractDefinition",
         "nodes": [

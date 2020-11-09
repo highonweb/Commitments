@@ -1,21 +1,21 @@
-form{
-    margin: 5px auto;
-    width: 500px;
-    display: block;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+form {
+  margin: 5px auto;
+  width: 500px;
+  display: block;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 
-.text-align{
-    text-align: center;
+.text-align {
+  text-align: center;
 }
-#post-commitment{
-    margin-top: 10px;
-    display: block;
+#post-commitment {
+  margin-top: 10px;
+  display: block;
 }
-.input{
-    width: 95%;
-    display: block;
-    margin-bottom: 15px;
-    padding: 5px;
+.input {
+  width: 95%;
+  display: block;
+  margin-bottom: 15px;
+  padding: 5px;
 }
