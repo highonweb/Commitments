@@ -1,7 +1,9 @@
-import React, {useState, useEffect} from 'react';
-import Commitment from './Commitment';
+import React, { useState, useEffect, useContext } from "react";
+import Commitment from "./Commitment";
+import { Web3Context } from "../contexts/Web3Context";
 
-function PendingContract({web3, ins, accts}) {
+function PendingContract() {
+  const { web3, ins, accts } = useContext(Web3Context);
   const [commitments, setCommitments] = useState([]);
 
   const justAsync = async () => {

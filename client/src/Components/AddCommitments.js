@@ -17,7 +17,7 @@ function AddCommitments() {
     e.preventDefault();
     await ins.methods
       .postCommitment(contract)
-      .send({ from: accts, value: web3.utils.toWei(amount, "ether") });
+      .send({ from: accts[0], value: web3.utils.toWei(amount, "ether") });
     setContract("");
     setAmount("0");
   };

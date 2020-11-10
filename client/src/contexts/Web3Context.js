@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-import RequestOrgan from "../contracts/RequestOrgan.json";
+import DeleteCommitment from "../contracts/DeleteCommitment.json";
 import getWeb3 from "../getWeb3";
 
 export const Web3Context = createContext();
@@ -13,9 +13,9 @@ function Web3ContextProvider(props) {
     const web3Instance = await getWeb3();
     const accounts = await web3Instance.eth.getAccounts();
     const networkId = await web3Instance.eth.net.getId();
-    const deployedNetwork = RequestOrgan.networks[networkId];
+    const deployedNetwork = DeleteCommitment.networks[networkId];
     const instance = new web3Instance.eth.Contract(
-      RequestOrgan.abi,
+      DeleteCommitment.abi,
       deployedNetwork && deployedNetwork.address
     );
     setins(instance);

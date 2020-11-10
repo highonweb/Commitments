@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import '../css/commitment.css';
+import React, { useState } from "react";
+import "../css/commitment.css";
 function Commitment({
   contractor,
   contractee,
@@ -12,13 +12,13 @@ function Commitment({
   assignedContracteeEvent,
 }) {
   const [takenby, setTakenBy] = useState(contractee);
-  const amountEther = web3.utils.fromWei(amount, 'ether');
-  assignedContracteeEvent().on('data', (e) => {
+  const amountEther = web3.utils.fromWei(amount, "ether");
+  assignedContracteeEvent().on("data", (e) => {
     setTakenBy(e.returnValues.contractee);
   });
   const takeContracts = async () => {
     try {
-      await assignContractee(id).send({from: accts});
+      await assignContractee(id).send({ from: accts });
     } catch (error) {
       console.log(error);
     }
@@ -30,7 +30,7 @@ function Commitment({
       <strong>
         amount: <b>{amountEther}</b> <strong>ETH</strong>
       </strong>
-      {'0x0000000000000000000000000000000000000000' !== takenby ? (
+      {"0x0000000000000000000000000000000000000000" !== takenby ? (
         <p>taken by: {takenby}</p>
       ) : (
         <p>
