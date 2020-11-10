@@ -14,11 +14,13 @@ function Commitment({
   const [takenby, setTakenBy] = useState(contractee);
   const amountEther = web3.utils.fromWei(amount, "ether");
   assignedContracteeEvent().on("data", (e) => {
-    setTakenBy(e.returnValues.contractee);
+    if (id == e.returnValues._id) {
+      setTakenBy(e.returnValues.contractee);
+    }
   });
   const takeContracts = async () => {
     try {
-      await assignContractee(id).send({ from: accts });
+      const contractee = await assignContractee(id).send({ from: accts });
     } catch (error) {
       console.log(error);
     }

@@ -32,7 +32,7 @@ function Explore() {
 
   return (
     <>
-      {commitments === [] ? (
+      {commitments.length == 0 ? (
         <h1 className="heading">Oops no commitments!</h1>
       ) : (
         <h1 className="heading">Commitments</h1>
